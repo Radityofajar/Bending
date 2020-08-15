@@ -75,8 +75,8 @@ void loop() {
       Serial.print(" ");
       Serial.print("\t");
       //Serial.println("Bending Moment : ");
-      Serial.print(shear);
-        i = i+1;
+      Serial.println(shear);
+      i = i+1;
     }
   }
 }
