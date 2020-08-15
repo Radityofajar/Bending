@@ -85,13 +85,13 @@ void loop() {
   {
     if(millis() - lastMillis > 100)
     { 
-      int x;
-      x = Serial.parseInt();
-      scale.power_up();
+      int i = 0; //iterasi
+      int x; //distance
+      x = Serial.parseInt(); //user input distance
+      scale.power_up(); 
       delay(500);
       float deformasi = scale.get_units(10);
       scale.power_down();
-      int i = 0;
       while(i <= x){
         float bending = (deformasi * (x - i));
         Serial.print(deformasi);
