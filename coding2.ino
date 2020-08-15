@@ -76,6 +76,7 @@ void loop() {
       
       scale.power_down();
       Serial.println("Calibration Done.");
+      Serial.println("input distance: ");
       modeCalibration = 0;
     }
   }
@@ -84,8 +85,7 @@ void loop() {
   {
     if(millis() - lastMillis > 100)
     { 
-    int x;
-      Serial.println("input distance: ");
+      int x;
       x = Serial.parseInt();
       scale.power_up();
       delay(500);
