@@ -19,6 +19,7 @@ void setup() {
   Serial.begin(9600);
   Serial.println("Calibration Load Cell");
   Serial.println();
+  Serial.println("Masukkan beban kalibrasi pertama :");
    
   float m,c;
   EEPROM.get(CalibrationM, m);
