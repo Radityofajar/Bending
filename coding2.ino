@@ -92,7 +92,8 @@ void loop() {
       delay(500);
       float deformasi = scale.get_units(10);
       scale.power_down();
-      while(i <= x){
+      while(i <= x)
+      {
         float bending = (deformasi * (x - i));
         Serial.print(deformasi);
         Serial.print(" ");
@@ -100,6 +101,6 @@ void loop() {
         i = i+1;
       }
       lastMillis = millis();
-      }
     }
   }
+}
